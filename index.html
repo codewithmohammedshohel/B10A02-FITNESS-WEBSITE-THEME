@@ -25,17 +25,17 @@
                 <h2>Get body in <span class="shape">shape</span> & stay healthy</h2>
                 <p>A huge selection of health and fitness content, healthy recipes, and transformation stories to help you get fit and stay fit!</p>
                 <div class="banner-buttons">
-                    <button class="btn join-club">Join Club Now!</button>
-                    <button class="btn download-app">Download App</button>
+                    <button class="btn join-club" aria-label="Join Club Now">Join Club Now!</button>
+                    <button class="btn download-app" aria-label="Download App">Download App</button>
                 </div>
             </div>
             <div class="banner-image">
-                <img src="./Assets/images/Images 2.png" alt="Fitness">
+                <img src="./Assets/images/Images 2.png" alt="Fitness Banner Image">
             </div>
             <div class="video-info">
                 <div class="video-tutorials">
                     <span>350+</span>
-                    <p>Video tutorials</p>
+                    <p>Video Tutorials</p>
                 </div>
                 <div class="workout-videos">
                     <span>500+</span>
@@ -52,60 +52,60 @@
         <section class="run-section">
             <div class="run-banner">
                 <div class="run-content">
-                    <h1>Run and Extra Mile Easily</h1>
+                    <h1>Run an Extra Mile Easily</h1>
                     <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                    <button class="btn-primary">Join Now</button>
+                    <button class="btn-primary" aria-label="Join Now">Join Now</button>
                 </div>
                 <div class="run-image-container">
-                    <img src="./Assets/images/run.jpg" alt="Run image">
+                    <img src="./Assets/images/run.jpg" alt="Running Image">
                 </div>
             </div>
         </section>
         <!-- run section ends here -->
 
-        <!-- training and exercise section starts here -->
+        <!-- Training and Exercise section starts here -->
         <section class="exercise-section">
             <div class="exercise-desc-container">
                 <h3 class="exercise-title">Training and Exercise</h3>
-                <p class="exercise-description">We believe fitness should be accessible to everyone, everywhere regardless of income or access to a gym.</p>
+                <p class="exercise-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             </div> 
             <div class="exercise-images-container">
                 <div class="exercise-img-container">
-                    <img src="./Assets/images/exercise1.jpg" alt="Exercise-1">
+                    <img src="./Assets/images/exercise1.jpg" alt="Exercise 1">
                     <div class="exercise-overlay">Lorem Ipsum</div>
                 </div>
                 <div class="exercise-img-container">
-                    <img src="./Assets/images/exercise2.png" alt="Exercise-2">
+                    <img src="./Assets/images/exercise2.png" alt="Exercise 2">
                     <div class="exercise-overlay">Lorem Ipsum</div>
                 </div>
                 <div class="exercise-img-container">
-                    <img src="./Assets/images/exercise3.png" alt="Exercise-3">
+                    <img src="./Assets/images/exercise3.png" alt="Exercise 3">
                     <div class="exercise-overlay">Leg Press: Works the quadriceps and glutes</div>
                 </div>
                 <div class="exercise-img-container">
-                    <img src="./Assets/images/exercise4.png" alt="Exercise-4">
+                    <img src="./Assets/images/exercise4.png" alt="Exercise 4">
                     <div class="exercise-overlay">Leg Press: Works the quadriceps and glutes</div>
                 </div>
                 <div class="exercise-img-container">
-                    <img src="./Assets/images/exercise5.jpg" alt="Exercise-5">
+                    <img src="./Assets/images/exercise5.jpg" alt="Exercise 5">
                     <div class="exercise-overlay">Leg Press: Works the quadriceps and glutes</div>
                 </div>
                 <div class="exercise-img-container">
-                    <img src="./Assets/images/exercise6.jpg" alt="Exercise-6">
+                    <img src="./Assets/images/exercise6.jpg" alt="Exercise 6">
                     <div class="exercise-overlay">Leg Press: Works the quadriceps and glutes</div>
                 </div>
             </div>
         </section>
-        <!-- training and exercise section ends here -->
+        <!-- Training and Exercise section ends here -->
 
-        <!-- BMI calculator section starts here -->
+        <!-- BMI Calculator section starts here -->
         <section class="bmi-calculator-section">
-            <div class="bmi-calculater-container">
+            <div class="bmi-calculator-container">
                 <table border="1">
                     <thead>
                         <tr>
                             <th>BMI</th>
-                            <th>Weight Loss</th>
+                            <th>Weight Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -128,20 +128,31 @@
                     </tbody>
                 </table>
             </div>
-            <div>
-                <h3>Calculate your BMI</h3>
+            <div class="bmi-calculator-form">
+                <h3>Calculate Your BMI</h3>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-                <input type="text" placeholder="Height/cm">
-                <input type="text" placeholder="Weight/kg">
-                <input type="text" placeholder="Age">
-                <input type="text" placeholder="Sex">
-                <input type="text" placeholder="Select an activity factor">
-                <button>Calculate</button>
+                <input type="number" placeholder="Height (cm)" aria-label="Height in centimeters">
+                <input type="number" placeholder="Weight (kg)" aria-label="Weight in kilograms">
+                <input type="number" placeholder="Age" aria-label="Age">
+                <select aria-label="Sex">
+                    <option value="" disabled selected>Select Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <select aria-label="Activity Factor">
+                    <option value="" disabled selected>Select an activity factor</option>
+                    <option value="sedentary">Sedentary</option>
+                    <option value="light">Lightly active</option>
+                    <option value="moderate">Moderately active</option>
+                    <option value="active">Very active</option>
+                    <option value="extra-active">Extra active</option>
+                </select>
+                <button aria-label="Calculate BMI">Calculate</button>
             </div>
         </section>
-        <!-- BMI calculator section ends here -->
+        <!-- BMI Calculator section ends here -->
 
-        <!-- meet our team section starts here -->
+        <!-- Meet Our Team section starts here -->
         <section class="trainer-section">
             <div class="trainer-desc-container">
                 <h3 class="trainer-title">Meet Our Team</h3>
@@ -192,7 +203,7 @@
                 </div>
             </div>
         </section>
-        <!-- meet our team section ends here -->
+        <!-- Meet Our Team section ends here -->
     </main>
     <!-- main section ends here -->
 
@@ -226,12 +237,11 @@
                     <a href="#">Safety Advice</a>
                 </div>
             </div>
-            <div>
-                <hr>
-                All right reserved @Fitness 2024
             </div>
-
-
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fitness. All rights reserved.</p>
+            </div>
         </div>
     </footer>
     <!-- footer section ends here -->
